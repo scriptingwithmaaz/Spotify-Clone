@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <div class="logo">
+                <svg role="img" viewBox="0 0 24 24" aria-label="Spotify" height="32" data-encore-id="logoSpotify">
+                    <title>Spotify</title>
+                    <path
+                        d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546"
+                        transform="translate(-0.95,0)"></path>
+                </svg>
+            </div>
+            <div class="search-bar">
+                <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+                <div class="search-bar-with-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="What do you want to play?">
+                    <i class="fa-solid fa-window-maximize"></i>
+                </div>
+            </div>
+            <div class="search-bar-remaining-option">
+                <button class="button-1">Explore premium</button>
+                <button class="button-2"><i class="fa-regular fa-circle-down"></i>Install app</button>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="library">
+                <div class="yourlibrary">
+                    <div class="both-library">
+                        <div class="library-1">
+                            <div class="library-icon"><i class="fa-solid fa-book"></i></div>
+                            <div class="library-text">Your Library</div>
+                        </div>
+                        <div class="library-2">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="library-artist">
+                        <button>Artists</button>
+                    </div>
+                </div>
+                <div class="artist-albums">
+                    <div class="artist-album-1-portion">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="recents">
+                            Recents
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                    </div>
+                    <div class="artist-album-2-portion">
+                        <div class="sidebar-artists">
+                            <i class="fa-solid fa-play"></i>
+                            <img src="Assets/Nusrat.jpg" alt="Nusrat Fateh Ali Khan">
+                            <div class="sidebar-artist-text">
+                                <p class="text1">Nusrat Fateh Ali Khan</p>
+                                <p class="text2">Artist</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-artists">
+                            <i class="fa-solid fa-play"></i>
+                            <img src="Assets/talha anjum.jpg" alt="Talha Anjum">
+                            <div class="sidebar-artist-text">
+                                <p class="text1">Talha Anjum</p>
+                                <p class="text2">Artist</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-artists">
+                            <i class="fa-solid fa-play"></i>
+                            <img src="Assets/Sidhu moose wala.jpg" alt="Sidhu Moose wala">
+                            <div class="sidebar-artist-text">
+                                <p class="text1">Sidhu Moose wala</p>
+                                <p class="text2">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="button-tabs">
+                <button class="all-button-tab">All</button>
+                <button class="music-button-tab">Music</button>
+            </div>
+            <div class="two-anchor-tags">
+                <a href="#" class="made-for-maaz-naeem-anchor-tag">Made For Maaz Naeem</a>
+                <a href="#" class="show-all-anchor-tag">Show all</a>
+            </div>
+            <div class="made-for-maaz-naeem-cards">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/yo yo honey singh.jpg" alt="Yo Yo Honey Singh">
+                    <p>Yo Yo Honey Singh</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/Sidhu moose wala.jpg" alt="Sidhu Moose Wala">
+                    <p>Sidhu Moose Wala,<br>Bohemia, Prem Dhillon...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/Nusrat.jpg" alt="Nusrat Fateh Ali Khan">
+                    <p>Nusrat Fateh Ali Khan,<br>Madhur Sharma, Manan...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/talha anjum 2.jpg" alt="Talha Anjum">
+                    <p>Umair, Talha Anjum,<br>Young Stunners and...</p>
+                </div>
+            </div>
+            <div class="two-anchor-tags">
+                <a href="#" class="made-for-maaz-naeem-anchor-tag your-top-mixes-anchor-tag">Your top mixes</a>
+                <a href="#" class="show-all-anchor-tag your-top-mixes-anchor-tag">Show all</a>
+            </div>
+            <div class="made-for-maaz-naeem-cards your-top-mixes-cards">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/nusrat 3.jpg" alt="Nusrat Fateh Ali Khan">
+                    <p>Yo Yo Honey Singh</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/sidhu 2.jpg" alt="Sidhu Moose Wala">
+                    <p>Sidhu Moose Wala,<br>Bohemia, Prem Dhillon...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/Nusrat.jpg" alt="Nusrat Fateh Ali Khan">
+                    <p>Nusrat Fateh Ali Khan,<br>Madhur Sharma, Manan...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/talha anjum.jpg" alt="Talha Anjum">
+                    <p>Umair, Talha Anjum,<br>Young Stunners and...</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/sidhu 3.jpg" alt="Sidhu Moose Wala">
+                    <p>Sidhu Moose Wala,<br>Nusrat Fateh Ali Khan...</p>
+                </div>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/Diljit Singh.jpg" alt="Diljit Dosanjh">
+                    <p>Diljit Dosanjh Singh</p>
+                </div>
+            </div>
+            <div class="two-anchor-tags">
+                <a href="#" class="made-for-maaz-naeem-anchor-tag your-top-mixes-anchor-tag">Recently played</a>
+                <a href="#" class="show-all-anchor-tag your-top-mixes-anchor-tag">Show all</a>
+            </div>
+            <div class="made-for-maaz-naeem-cards your-top-mixes-cards Recently-played-cards">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/glory.jpg" alt="Glory">
+                    <p>GLORY</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/aur shikayat.jpg" alt="Aur Shikayat">
+                    <p>AUR SHIKAYAT</p>
+                </div>
+            </div>
+            <div class="two-anchor-tags">
+                <a href="#" class="made-for-maaz-naeem-anchor-tag your-top-mixes-anchor-tag">More of what you like</a>
+                <a href="#" class="show-all-anchor-tag your-top-mixes-anchor-tag">Show all</a>
+            </div>
+            <div class="made-for-maaz-naeem-cards your-top-mixes-cards More-of-what-you-like-cards">
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/heeriye 3.jpg" alt="Heeriye">
+                    <p>Heeriye</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/the night we met.jpg" alt="The Night We Met">
+                    <p>The Night We Met</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/aaye haaye song.jpg" alt="Aaye Haaye">
+                    <p>Aaye Haaye</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/out of time.jpg" alt="Out of Time">
+                    <p>Jani - Out of Time</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/downer at dusk.jpg" alt="Downers at Dusk">
+                    <p>Downers at Dusk</p>
+                </div>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <div class="card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <img src="Assets/dekho na.jpg" alt="Dekho Na">
+                    <p>Dekho na dekho na zulfon se...</p>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="song-playing">
+                <div class="song-playing-photo">
+                    <img src="Assets/glory.jpg" alt="Glory">
+                </div>
+                <div class="song-playing-text">
+                    <a href="#" class="mill-anchor-tag">Millionare</a>
+                    <br>
+                    <a href="#" class="Yo-Yo-anchor-tag">Yo Yo Honey Singh</a>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-buttons">
+                    <img src="Assets/player_icon1.png" loading="lazy" alt="Previous track"
+                        class="other-four-button first-player-icon-button-pic">
+                    <img src="Assets/player_icon2.png" loading="lazy" alt="Rewind" class="other-four-button">
+                    <img src="Assets/player_icon3.png" loading="lazy" alt="Play/Pause" class="main-playing-button">
+                    <img src="Assets/player_icon4.png" loading="lazy" alt="Forward" class="other-four-button">
+                    <img src="Assets/player_icon5.png" loading="lazy" alt="Next track" class="other-four-button">
+                </div>
+                <div class="range-options">
+                    <p>0:31</p>
+                    <input type="range" min="0" max="135" value="31" class="range-line" aria-label="Progress bar">
+                    <p>2:15</p>
+                </div>
+            </div>
+            <div class="music-player-remaining-options">
+                <i class="fa-regular fa-file-video" aria-hidden="true"></i>
+                <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+                <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                <input type="range" min="0" max="100" value="50" class="volume" aria-label="Volume control">
+                <i class="fa-solid fa-down-left-and-up-right-to-center" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

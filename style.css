@@ -1,0 +1,810 @@
+body {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* Nav bar */
+
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+
+.nav-bar {
+    width: 100vw;
+    height: 4.5rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.logo {
+    width: 25%;
+    filter: invert(1);
+    margin-left: 2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+
+
+.search-bar {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.search-bar-remaining-option {
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.home-icon {
+    background-color: #202020;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.45rem;
+    margin-left: 4rem;
+    transition: all .07s ease-in;
+}
+
+
+.home-icon:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.search-bar-with-icon {
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.search-bar-with-icon:hover {
+    box-shadow: white 0 0 2px;
+    background-color: #2e2e2e;
+}
+
+.search-bar-with-icon .fa-magnifying-glass {
+    opacity: 60%;
+}
+
+.search-bar-with-icon i:hover {
+    cursor: pointer;
+    opacity: 100%;
+    color: white;
+    transform: scale(1.05);
+}
+
+.search-bar-with-icon:hover .fa-magnifying-glass {
+    opacity: 100%;
+}
+
+.search-bar-with-icon i {
+    color: rgb(215, 215, 215);
+    margin-right: 0.5rem;
+}
+
+.search-bar-with-icon input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: rgb(215, 215, 215);
+}
+
+.search-bar-with-icon input::placeholder {
+    color: rgb(215, 215, 215);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
+.search-bar-remaining-option button {
+    border-radius: 1.2rem;
+    height: 2.2rem;
+    background-color: white;
+    font-weight: 700;
+    width: 9rem;
+    font-size: 0.8rem;
+}
+
+.search-bar-remaining-option .button-2{
+    background-color: black;
+    border: black;
+    color: white;
+}
+
+.search-bar-remaining-option .button-2 i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-bar-remaining-option .button-1{
+    border: none;
+    outline: none;
+}
+
+
+.search-bar-remaining-option .button-1:hover {
+    cursor: pointer;
+    background-color: #e0dfdf;
+    transform: scale(1.05);
+}
+
+.search-bar-remaining-option .button-2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.fa-bell {
+    opacity: 68%;
+    font-size: 1.1rem;
+    margin-right: 0.65rem;
+}
+
+.fa-bell:hover {
+    cursor: pointer;
+    opacity: 100%;
+    transform: scale(1.05);
+}
+
+.fa-user {
+    border-radius: 50%;
+    border: #202020 solid 1px;
+    border-width: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+.fa-user:hover {
+    cursor: pointer;
+    opacity: 100%;
+    transform: scale(1.05);
+}
+
+
+.fa-magnifying-glass {
+    font-size: 1.3rem;
+}
+
+
+.fa-window-maximize {
+    font-size: 1.3rem;
+    opacity: 70%;
+}
+
+
+@media (max-width: 1024px) {
+    .search-bar-remaining-option .button-1{
+        display: none;
+    }
+}
+
+
+
+/* Sidebar */
+
+
+.side-bar {
+    background-color: #121212;
+    border-radius: 1rem;
+    width: 30%;
+    position: absolute;
+    top: 4.2rem;
+    bottom: 5.5rem;
+    display: flex;
+    left: 0.5rem;
+}
+
+
+.library-1 {
+    display: flex;
+    opacity: 70%;
+}
+
+.library-1:hover {
+    color: white;
+    filter: none;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.library-1:hover .library-text{
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.library-1:hover .library-icon {
+    filter: invert(0);
+    transition: all 0.3s ease-in;
+}
+
+
+.both-library {
+    display: flex;
+    margin-top: 1.3rem;
+    cursor: default;
+}
+
+
+.library-icon {
+    margin-left: 2rem;
+    filter: invert(0.35);
+    font-size: 1.3rem;
+}
+
+
+.library-text {
+    margin-left: 0.9rem;
+    color: rgb(218, 218, 218);
+    font-weight: 600;
+}
+
+.library-2 {
+    margin-left: 11rem;
+    color: rgb(218, 218, 218);
+    opacity: 70%;
+}
+
+.library-2 .fa-plus {
+    margin-right: 1.7rem;
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-radius: 50%;
+
+}
+
+
+.library-2 .fa-plus:hover{
+    opacity: 100%;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #313030;
+}
+
+
+.library-2 .fa-arrow-right {
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-radius: 50%;
+}
+
+.library-2 .fa-arrow-right:hover{
+    opacity: 100%;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #313030;
+}
+
+
+.library-artist button{
+    margin-left: 1.4rem;
+    margin-top: 1.2rem;
+    background-color: #282828;
+    border: #282828 solid 1px;
+    border-radius: 1rem;
+    color: white;
+    height: 2rem;
+    width: 4.5rem;
+    font-weight: 550;
+}
+
+.library-artist button:hover {
+    background-color: #393939;
+    cursor: pointer;
+}
+
+
+.artist-album-1-portion {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+
+.artist-album-1-portion .fa-magnifying-glass {
+    margin-left: 1.9rem;
+    font-size: 0.9rem;
+    font-weight: 550;
+    color: rgb(168, 164, 164);
+    opacity: 80%;
+    background-color: transparent;
+    border: 8px solid transparent;
+    border-radius: 50%;
+}
+
+
+.artist-album-1-portion .fa-magnifying-glass:hover {
+    cursor: pointer;
+    color: white;
+    opacity: 100%;
+    background-color: #313030;
+}
+
+.recents {
+    margin-left: 17.3rem;
+    color: rgb(168, 164, 164);
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 80%;
+}
+
+
+.recents .fa-list {
+    margin-left: 0.2rem;
+}
+
+.recents:hover {
+    color: white;
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.sidebar-artists {
+    display: flex;
+    align-items: center;
+    margin-top: 0.6rem;
+    height: 4rem;
+    width: 27rem;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.sidebar-artists .fa-play {
+    display: none;
+    left: 2.2rem;
+    top: 1.6rem;
+    position: absolute;
+}
+
+.sidebar-artists img {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+}
+
+.text1 {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.text2 {
+    color: rgb(168, 164, 164);
+    font-size: 0.87rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.sidebar-artists:hover{
+    border-radius: 0.3rem;
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+.sidebar-artists:hover img {
+    transition: all 0.25s ease-in;
+    border-radius: 0;
+    opacity: 0.3;
+}
+
+.sidebar-artists:hover .fa-play {
+    display: block;
+}
+
+
+
+/* main-content */
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    position: fixed;
+    top: 4.4rem;
+    left: 30%;
+    right: 0;
+    bottom: 5.5rem;
+    margin-left: 1.1rem;
+    margin-right:0.5rem;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.button-tabs {
+    height: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.all-button-tab {
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 2.5rem;
+    border: #f0f0f0 1px solid;
+}
+
+.all-button-tab:hover {
+    background-color: #e0dfdf;
+    cursor: pointer;
+}
+
+
+.music-button-tab {
+    background-color: #282828;
+    color: white;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 2rem;
+    border: #282828 1px solid;
+    margin-left: 0.6rem;
+}
+
+.music-button-tab:hover {
+    background-color: #393939;
+    cursor: pointer;
+}
+
+
+
+.two-anchor-tags {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.made-for-maaz-naeem-anchor-tag {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1.6rem;
+    color: white;
+    font-weight: 600;
+}
+
+.made-for-maaz-naeem-anchor-tag:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.show-all-anchor-tag {
+    text-decoration: none;
+    margin-right: 2.5rem;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.show-all-anchor-tag:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.made-for-maaz-naeem-cards {
+    display: flex;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.made-for-maaz-naeem-cards .card {
+    margin-left: 0.5rem;
+    padding: 0.7rem;
+    position: relative;
+}
+
+.made-for-maaz-naeem-cards .card:hover {
+    cursor: pointer;
+    background-color: #1d1d1d;
+    border-radius: 0.5rem;
+}
+
+.made-for-maaz-naeem-cards .card img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+
+
+.made-for-maaz-naeem-cards .card p {
+    font-size: 0.8rem;
+    color: rgb(168, 164, 164);
+    margin-left: 0.25rem;
+    font-weight: 500;
+}
+
+.made-for-maaz-naeem-cards .card .fa-circle-play {
+    display: block;
+    color: #3ae176;
+    background-color: black;
+    font-size: 3rem;
+    position: absolute;
+    left: 7.2rem;
+    top: 7.2rem;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .3s ease;
+}
+
+.made-for-maaz-naeem-cards .card:hover .fa-circle-play {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.main-content .Recently-played-cards .card .fa-circle-play {
+    font-size: 2rem;
+}
+
+
+
+.your-top-mixes-anchor-tag {
+    margin-top: 3rem;
+}
+
+.your-top-mixes-cards {
+    margin-top: 3.5rem;
+    position: relative;
+}
+
+.Recently-played-cards .card img {
+    height: 8rem;
+    width: 8rem;
+}
+
+.Recently-played-cards .card p {
+    color: white;
+    font-size: 0.85rem;
+}
+
+.More-of-what-you-like-cards .card p {
+    color: white;
+    font-size: 0.85rem;
+}
+
+
+.made-for-maaz-naeem-cards .fa-circle-chevron-right {
+    font-size: 2.5rem;
+    top: 6rem;
+    right: 2.2rem;
+    position: absolute;
+    color: #2a2a2a;
+    border-radius: 50%;
+    display: block;
+    filter: invert(1);
+    z-index: 1;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all .3s ease;
+}
+
+.made-for-maaz-naeem-cards:hover .fa-circle-chevron-right {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+
+
+
+/* music-player */
+
+
+.music-player {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+
+.song-playing {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.music-player .song-playing .song-playing-photo img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.music-player .song-playing-text a{
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.music-player .song-playing-text a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mill-anchor-tag {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.Yo-Yo-anchor-tag {
+    color: #b3b3b3;
+    font-size: 0.7rem;
+}
+
+.Yo-Yo-anchor-tag:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.music-player .song-playing .fa-circle-plus {
+    color: #b3b3b3;
+    margin-left: 0.5rem;
+}
+
+.music-player .song-playing .fa-circle-plus:hover {
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.player {
+    width: 50%;
+    margin-left: 12rem;
+    position: relative;
+}
+
+
+.player .player-buttons img{
+    height: 1rem;
+    width: 1rem;
+    padding: 0.7rem;
+}
+
+
+.first-player-icon-button-pic {
+    margin-left: 8rem;
+}
+
+.player .player-buttons .main-playing-button {
+    transform: scale(2);
+}
+
+.player .player-buttons .main-playing-button:hover {
+    cursor: pointer;
+    transform: scale(2.05);
+}
+
+.player .player-buttons .other-four-button {
+    opacity: 70%;
+}
+
+.player .player-buttons .other-four-button:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.player .range-options {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.player .range-options p {
+    margin: 0.5rem;
+}
+
+.player .range-options p:hover {
+    cursor: default;
+}
+
+.player .range-options:hover {
+    cursor: default;
+}
+
+.range-line {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.range-line::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.range-line::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: -6px;
+    background-color: #1bd760;
+}
+
+
+
+
+.music-player-remaining-options {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0.5rem;
+    
+}
+
+.music-player-remaining-options i{
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+    color: #b3b3b3;
+}
+
+.music-player-remaining-options i:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.music-player-remaining-options .volume {
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.music-player-remaining-options .volume::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.music-player-remaining-options .volume::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
